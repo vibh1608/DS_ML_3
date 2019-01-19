@@ -40,7 +40,7 @@ from sklearn import metrics
 from sklearn.cross_validation import cross_val_score
 dta = sm.datasets.fair.load_pandas().data
 
-# add "affair" column: 1 represents having affairs, 0 represents not
+<b>add "affair" column: 1 represents having affairs, 0 represents not</b>
 dta['affair'] = (dta.affairs > 0).astype(int)
 y, X = dmatrices('affair ~ rate_marriage + age + yrs_married + children + \
 religious + educ + C(occupation) + C(occupation_husb)',
